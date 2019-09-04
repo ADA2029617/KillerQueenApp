@@ -9,12 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var queenImage: UIImageView!
+    
+    @IBOutlet weak var killerQueen: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
+    
+    
+    @IBAction func queenButton(_ sender: Any) {
+        queenImage.isHidden = false
+    }
+    
 }
 
